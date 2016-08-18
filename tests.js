@@ -13,19 +13,28 @@ describe("Note creation works properly", function() {
        note = new Note("Hello world", "Ridwan")
        assert(note.author == "Ridwan")
    })
+   
    it("assigns text to note based on the parameter supplied in the constructor", function() {
        note = new Note("Hello world", "Ridwan")
        assert(note.content == "Hello world")
    })
-   it("asserts that empty parameters are not passed in", function () {
+   
+   it("checks that empty parameters are not passed in", function () {
        note = new Note("Hello World", "Ridwan")
        assert( (note.content != "") || (note.author != ""))
    })
-   it("asserts that an empty parameter isn't passed into the setNote method", function() {
+   
+   it("checks that an empty parameter isn't passed into the setNote method", function() {
        note = new Note("Hello World", "Ridwan")
        note.setNote("new changes")
        assert( note.content == "new changes")
        
    })
+
+   it(""
+        note = new NotesApplication()
+        note.create(new Note("A brand new note", "Ridwan"))
+    )
+
 })
 
