@@ -19,7 +19,7 @@ describe("NotesApplication manipulating notes", function() {
 
   it("returns empty for a new note application", function () {
     var noteapp = new NotesApplication();
-    assert(noteapp.list_notes() === "empty")
+    assert(noteapp.listNotes() === "empty")
   });
 
   it("returns number of notes created", function() {
